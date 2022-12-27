@@ -1,0 +1,125 @@
+
+* {
+  transition: .2s linear;
+}
+
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: .1rem solid rgba(255, 255, 255, .3);
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: none;
+  transition: .2s linear;
+  /* background-color: black; */
+}
+
+.bgImg {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 150px;
+    margin-top: 70px; */
+}
+
+.get-started:hover {
+  letter-spacing: .2rem !important;
+  transform: scaleX(1) !important;
+  cursor: pointer;
+}
+
+/* @media (max-width:1078px) { */
+/* .listing span:hover {
+  border-bottom: .1rem solid var(--main-color) !important;
+  padding-bottom: .1rem !important;
+  font-size: 15px;
+} */
+
+  .listing .unOrderList::after {
+    content: '';
+    display: block;
+    width: 0 !important;
+    height: 2px;
+    background: var(--main-color);
+    transition: width .3s;
+    position: absolute;
+    bottom: 2px;
+  }
+  
+  .listing .unOrderList:hover::after {
+    width: 100% !important;
+    transition: width .3s;
+  } 
+  .unOrderList:hover{
+    transform: scale(0.9);
+  }
+  
+
+
+
+/* reduce the font size of komoniwa text  */
+@media (max-width:290px) {
+  .komoniwa {
+    font-size: 40px !important;
+  }
+
+}
+
+
+@media (max-width:838px) {
+  .homebg {
+    /* background-image: url('../public/Pic/Banner.png-c (3).png'); */
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+
+body {
+  background-color: black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.danger {
+  background-color: red;
+}
+
+body {
+  transition: all 2s ease;
+  transition: transform 2s;
+}
+
+html::-webkit-scrollbar {
+  width: .2rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5rem;
+}
+
+.testso {
+  background-image: radial-gradient(circle, blue, rgb(21, 0, 255));
+}
