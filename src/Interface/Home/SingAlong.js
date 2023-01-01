@@ -76,9 +76,10 @@ function SkillSet() {
                             <div className='my-[70px]'></div>
                             <div className="flex justify-center items-center">
                                 <div className='flex item-center justify-center absolute bottom bottom-0'>
-                                    <div className="w-40 text-center text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-[#d3ad7f] active:bg-[#d3ad7f] uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 md:hover:w-[300px] lg:hover:w-[300px] md:60 lg:60 xl:60">
+                                    {/* <div className="w-40 text-center text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-[#d3ad7f] active:bg-[#d3ad7f] uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 md:hover:w-[300px] lg:hover:w-[300px] md:60 lg:60 xl:60">
                                         Order Now
-                                    </div>
+                                    </div> */}
+                                    <button>  Order Now</button>
                                 </div>
                             </div>
                         </div>

@@ -6,12 +6,13 @@ import GetInTouch from '../Interface/RegistrationGetInTouch/GetInTouch'
 import Quiz from '../Interface/Quiz/Quiz'
 import QuizScores from '../Interface/Quiz/QuizScores'
 import NotFound from '../Interface/404/NotFound'
-
+import Nav from '../Interface/Navbar/Nav'
 function Routing() {
     return (
         <div>
             <Router>
-                <Navbar />
+                {/* <Navbar /> */}
+                <Nav/>
                 <Routes>
                     <Route path='/' element={<Home />}></Route>
                     <Route path='/GetInTouch' element={<GetInTouch />}></Route>

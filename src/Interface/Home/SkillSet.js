@@ -34,8 +34,8 @@ function SkillSet() {
                     <div className='flex flex-wrap flex-row text-center gap-x-6 gap-y-6'>
                         {
                             skillset.map((skill) => (
-                                <div key={skill.title} className="group relative">
-                                    <div className="min-h-80 aspect-w-1 w-72 aspect-h-1 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80 md:w-96 lg:w-96 xl:w-96">
+                                <div key={skill.title} className="group bg-[#2B0D2B]">
+                                    <div className="min-h-80 aspect-w-1 w-72 aspect-h-1 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80 md:w-96 lg:w-96 xl:w-96 rounded-[20%]">
                                         <img src={skill.image} alt="Front of men&#039;s Basic Tee in black." className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
                                     </div>
                                     {/* <div className="mt-4 flex justify-between"> */}
@@ -46,9 +46,10 @@ function SkillSet() {
                                     <p className="mt-1 text-sm text-slate-100 text-center mb-3">{skill.description}</p>
 
                                     {/* <div className="text-sm font-medium text-slate-100 text-center"> */}
-                                    <div className="text-center text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-[#d3ad7f] active:bg-[#d3ad7f] uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 ">
+                                    {/* <div className="text-center text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-[#d3ad7f] active:bg-[#d3ad7f] uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 ">
                                         Explore
-                                    </div>
+                                    </div> */}
+                                    <button> Explore</button>
                                 </div>
                             ))
                         }

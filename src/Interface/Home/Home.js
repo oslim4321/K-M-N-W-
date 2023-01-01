@@ -2,16 +2,15 @@ import React from 'react'
 import Footer from '../Footer/Footer'
 import About from './About'
 import AboutAuthor from './AboutAuthor'
-import SingAlong from './SingAlong'
 import AttemptQuiz from '../Quiz/AttemptQuiz'
 import GetInTouch from '../RegistrationGetInTouch/GetInTouch'
 import SkillSet from './SkillSet'
-
+import SingAlong from './SingAlong/SingAlong'
 
 function Home() {
     return (/* process.env.PUBLIC_URL + "/Pic/Banner.png-c (2).png" */
         <div>
-            <section className="header relative pt-16 items-center flex homebg mb-32">
+            <section className="header relative items-center flex z-40">
                 <img src="/images/Banner.png-d.png" alt=""
                 className=' bgImg hidden md:block' 
                 />
@@ -27,12 +26,11 @@ function Home() {
                                 {/* . It features multiple HTML elements and it comes with dynamic components for ReactJS, Vue and Angular. */}
                             </p>
                             <div className='mt-12'>
-                                <div className="get-started w-60 text-center text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-[#d3ad7f] active:bg-[#d3ad7f] uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 ">
+                                {/* <div className="get-started w-60 text-center text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-[#d3ad7f] active:bg-[#d3ad7f] uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 ">
                                     Explore
-                                </div>
-                                {/* <span className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg">
-                                    Git Hub
-                                </span> */}
+                                </div> */}
+
+                              <button className='absolute cursor-pointer'>Explore</button>
                             </div>
                         </div>
                     </div>
@@ -40,8 +38,9 @@ function Home() {
                 {/* <img src={process.env.PUBLIC_URL + "/Pic/Banner.png-c (2).png"} alt="" className='absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 hidden md:flex lg:flex' /> */}
             </section>
             <AboutAuthor />
-            <SingAlong />
             <SkillSet />
+            {/* <SingAlong /> */}
+            {/* <SingAlong /> */}
             <About />
             <AttemptQuiz />
             <GetInTouch />

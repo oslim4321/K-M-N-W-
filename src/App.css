@@ -43,6 +43,9 @@
   font-size: 15px;
 } */
 
+
+@media (min-width: 1023px){
+
   .listing .unOrderList::after {
     content: '';
     display: block;
@@ -56,11 +59,15 @@
   
   .listing .unOrderList:hover::after {
     width: 100% !important;
-    transition: width .3s;
+    transition: width .5s;
+    
   } 
   .unOrderList:hover{
     transform: scale(0.9);
+    color: var(--main-color) !important;
   }
+}
+
   
 
 
@@ -71,6 +78,21 @@
     font-size: 40px !important;
   }
 
+}
+
+
+
+button{
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+}
+button:hover{
+  letter-spacing: .2rem;
+  transition: all 1s ease;
 }
 
 
